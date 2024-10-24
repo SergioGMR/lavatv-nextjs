@@ -1,9 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
+export default function Document({ title }: { title?: string }) {
   return (
-    <Html lang="en">
-      <Head />
+    <Html lang="es">
+      <Head title={`LavaTV - ${title ?? 'Index'}`} />
       <body className="antialiased">
         <Main />
         <NextScript />
